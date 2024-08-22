@@ -42,7 +42,7 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
               'description': value['description'] ?? '',
               'author': value['author'] ?? '',
               'duration': value['duration'] ?? '',
-              'imageUrl': value['imageUrl'] ?? '',
+              'imageUrl': value['thumbnailUrl'] ?? '',
             });
 
             print("Data Fetch Kr rha");

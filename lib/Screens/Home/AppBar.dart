@@ -3,6 +3,7 @@ import 'package:testbaoiam/Screens/Home/searchField.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:testbaoiam/Screens/Notification/Notification.dart';
 import 'package:testbaoiam/Screens/ScreenSize.dart';
 
 class HomeScreenAppBar extends StatefulWidget implements PreferredSizeWidget {
@@ -67,7 +68,10 @@ class _HomeScreenAppBarState extends State<HomeScreenAppBar> {
         IconButton(
           icon: Icon(Icons.notifications_none, color: Colors.black),
           onPressed: () {
-            // Handle notification button press
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => NotificationScreen()),
+            );
           },
         ),
       ],
