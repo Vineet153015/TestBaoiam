@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:testbaoiam/Modules/Modules.dart';
 import 'package:testbaoiam/ReusableComponents/videoPlayer2.dart';
 import 'package:testbaoiam/Screens/Home/SearchCategory.dart';
 import 'package:testbaoiam/Screens/PopUpScreen/PopUpScreen.dart';
@@ -185,7 +186,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
                                 ),
                               ),
                               // Modules Tab
-                              SearchResultScreen(searchQuery: widget.searchQuery),
+                              ModulesPage(searchQuery: widget.searchQuery)
                             ],
                           ),
                         ),

@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:testbaoiam/Screens/Home/Dashboard.dart';
 import 'package:flutter/material.dart';
 
+import 'Home/Dashboard2.dart';
+
 
 class SplashScreen2 extends StatefulWidget {
   @override
